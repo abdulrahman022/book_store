@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "book";
+    src: url(Cocogoose\ Pro-trial.ttf);
+}
+
+.welcome {
+    background-color: #fdfded;
+    padding: 10px;
+    border: 1px solid #c7c7c4af;
+    border-bottom: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25pt;
+    letter-spacing: 3px;
+}
+
+p {
+    letter-spacing: 5px;
+    font-family: book;
+    font-size: 20pt;
+    text-align: center;
+}
+h1,p {
+    margin-top: 35px;
+}
+
+#book {
+    float: right;
+    margin-top: -170px;
+    margin-right: 100px;
+}
+
+#reader {
+    margin-top: -175px;
+    margin-left: 100px;
+}
+
+
+#bar,#bar1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bar th,#bar1 th {
+    text-align: center;
+    font-size: 13pt;
+    padding: 15px;
+    background-color: #f9fadc;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5%;
+    color: black;
+    border: 1px solid #afafafaf;
+}
+#bar th:hover,#bar1 th:hover {
+    background-color: #f8f8ee;
+    border: 2px solid black;
+    font-size: 20pt;
+}
+#bar1 th {
+    background-color: #f6f8de;
+    border: 1px solid #afafafaf;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#p1,#intro,#why,#ser,#categ,#buy,#prices {
+    padding: 10px;
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#intro,#why,#ser,#categ,#buy,#prices{ 
+background-color: #f5f5e6;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.top-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+#introC,#whyC,#serC {
+    color: #444343;
+    text-align: left;
+}
+#introduction,li,#services,#whyus {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15pt;
+color: #2c2c2c;
+text-align: justify;
+letter-spacing: 0px;
+line-height: 1.5em;
+}
