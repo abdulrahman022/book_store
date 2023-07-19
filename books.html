@@ -6,6 +6,101 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Online Book Store</title>
    <link rel="stylesheet" href="style.css">
+
+   <style>
+   #cat1,#tbooks {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+#cat1 th {
+    text-align: center;
+    font-size: 18pt;
+    padding: 15px;
+    width: 5%;
+    color: black;
+    background-color: #fbfcdd;
+    border: 1px solid #b3b664;
+    font-family: categ;
+    font-weight: 600;
+    height: 40px;
+    cursor: pointer;
+    /* box-shadow: 0 3px 12px -6px black; */
+}
+#cat1 th:hover {
+    background-color: #f8f8da;
+    border: 2px solid black;
+    font-size: 22pt;
+}
+
+#tbooks {
+   margin-top: -50px;
+}
+#tbooks td {
+    text-align: center;
+    padding: 35px;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tbooks td #tafP,#tbooks td #hadP,#tbooks td #fiqP {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 8pt;
+   background-color: #ac2a2a;
+   color: white;
+   padding: 5px;
+   border: 1px solid black;
+   font-weight: bolder;
+} 
+#tbooks td #hadP{background-color: #f3e038; color: #292901;}
+#tbooks td #fiqP{background-color: #2a8ba3; color: #ffffff;}
+#tbooks td #tafP:hover,#tbooks td #hadP:hover,#tbooks td #fiqP:hover {
+   font-size: 14pt;
+   box-shadow: 10px 10px 10px black;
+   margin-right: -20%;
+   margin-left: -20%;
+}
+
+
+#tbooks td button {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 12pt; 
+   font-weight: 600; 
+   background-color: #aa2b22;
+   margin-top: 10px;
+   width: 100%;
+   padding: 5px;
+   color: #f8f8da;
+   border: 1px solid rgb(58, 4, 4);
+   cursor: pointer;
+}
+
+
+hr{
+   width: 60%;
+}
+
+#button:hover,
+#tbooks td #ybutton:hover,
+#tbooks td #gbutton:hover {
+   font-size: 18pt;
+   background-color: #fafafa;
+   color: black;
+   border: 2px solid black;
+}
+#tbooks td #ybutton {
+   background-color: #f3e038;
+   color: black;
+}
+#tbooks td #gbutton {
+   background-color: #2a8ba3;
+}
+
+#tbooks td img:hover {
+   box-shadow: 5px 5px 5px #292901;
+}
+   </style>
+   
 </head>
 
 <body>
@@ -26,6 +121,54 @@
          </tr>
       </thead>
    </table>
-   <h1>Sorry data not available yet.</h1>
+   <br>
+   <p class="CatP">BOOKS CATEGORY</p>
+   
+   <table id="cat1">
+   <tr>
+   <th><a href="#tafseer">TAFSEER</a></th>
+   <th><a href="#hadees">HADEES</a></th>
+   <th><a href="#fiqh">FIQH</a></th>
+   </tr>
+   <tr>
+   <th>MANTIQ</th>
+   <th>BALAGHAT</th>
+   <th>FALSAFA</th>
+   </tr>
+   </table>
+   <br><br>
+   <hr>
+   <br>
+   
+   <p class="CatP1" id="tafseer">TAFSEER BOOKS</p>
+   <table id="tbooks">
+   
+   <tr>
+   <td><p id="tafP">Tibyan-ul-Quraan</p><img src="t1.jpeg" alt=""><button id="button">BUY NOW</button></td>
+   <td><p id="tafP">Tibyan-ul-Quraan</p><img src="t1.jpeg" alt=""><button id="button">BUY NOW</button></td>
+   <td><p id="tafP">Tibyan-ul-Quraan</p><img src="t1.jpeg" alt=""><button id="button">BUY NOW</button></td>
+   </tr>
+   </table>
+
+   <table id="tbooks">
+   <p class="CatP1" id="hadees">HADEES BOOKS</p>
+   <tr>
+   <td><p id="hadP">Sahih-Bukhari</p><img src="hadees.png" alt="" width="200px" height="270px"><button id="ybutton">BUY NOW</button></td>
+   <td><p id="hadP">Sahih-Bukhari</p><img src="hadees.png" alt="" width="200px" height="270px"><button id="ybutton">BUY NOW</button></td>
+   <td><p id="hadP">Sahih-Bukhari</p><img src="hadees.png" alt="" width="200px" height="270px"><button id="ybutton">BUY NOW</button></td>
+   </tr>
+   </table>
+
+   <table id="tbooks">
+   <p class="CatP1" id="fiqh">FIQH BOOKS</p>
+   <tr>
+   <td><p id="fiqP">AL-Hidaya P1</p><img src="fiqh.jpg" alt="" width="200px" height="270px"><button id="gbutton">BUY NOW</button></td>
+   <td><p id="fiqP">AL-Hidaya P1</p><img src="fiqh.jpg" alt="" width="200px" height="270px"><button id="gbutton">BUY NOW</button></td>
+   <td><p id="fiqP">AL-Hidaya P1</p><img src="fiqh.jpg" alt="" width="200px" height="270px"><button id="gbutton">BUY NOW</button></td>
+   </tr>
+   </table>
+   <br>
+   <a href="#topofpage"><img src="up-arrow.png" alt="top-Icon" class="top-icon" style="width: 50px; height: 50px;"></a>
+   <br>
    </body>
    </html>

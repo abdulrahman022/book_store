@@ -6,6 +6,39 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Online Book Store</title>
    <link rel="stylesheet" href="style.css">
+
+   <style>
+   .order {
+   width: 30%;  
+   background-color: #fafadc;
+   border: 1px solid #dbdbab;
+   padding: 20px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+
+   #button {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 12pt; 
+   font-weight: 600; 
+   background-color: #f0f0ae;
+   margin-top: 35px;
+   width: 100%;
+   padding: 5px;
+   color: #000000;
+   border: 1px solid rgb(58, 4, 4);
+   cursor: pointer;
+}
+#button:hover {
+   font-size: 14pt;
+   background-color: #fafafa;
+   color: black;
+   border: 2px solid black;
+}
+hr{
+   width: 30%;
+} 
+   </style>
 </head>
 
 <body>
@@ -26,6 +59,42 @@
          </tr>
       </thead>
    </table>
-<h1>Sorry data not available yet.</h1>
-   </body>
-   </html>
+<h1>Place Your Order Now</h1>
+<hr>
+<br>
+<div class="order">
+   <table>
+<form id="order-form" action="">
+<tr>
+<td><label for="name"><b>Name:</b></label></td>
+<td><input type="text" id="name" required></td>
+</tr>
+<tr>
+<td><label for="email"><b>Email:</b></label></td>
+<td><input type="email" name="email" required></td>
+</tr>
+<tr>
+<td><label for="address"><b>Address:</b></label></td>
+<td><textarea name="address" id="address" cols="21" rows="5"></textarea></td>
+</tr>
+<tr>
+<td><b>Select Book:</b></td>
+<td><select name="book" id="">
+<option selected>Select the book</option>
+<option value="book1">Tibyan-ul-Quraan</option>
+<option value="book2">Sahih-Bukhari</option>
+<option value="book3">AL-Hidaya</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><input type="submit" id="button" value="Place Order"></td>
+</tr>
+</form>
+</table>    
+</div>
+<br>
+<br>
+<br>
+</body>
+</html>

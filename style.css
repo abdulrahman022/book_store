@@ -2,6 +2,10 @@
     font-family: "book";
     src: url(Cocogoose\ Pro-trial.ttf);
 }
+@font-face {
+    font-family: "categ";
+    src: url(RuckSack\ Light.otf);
+}
 
 .welcome {
     background-color: #fdfded;
@@ -29,7 +33,7 @@ h1,p {
 
 #book {
     float: right;
-    margin-top: -170px;
+    margin-top: -160px;
     margin-right: 100px;
 }
 
@@ -39,29 +43,40 @@ h1,p {
 }
 
 
-#bar,#bar1 {
+#bar {
     width: 100%;
     border-collapse: collapse;
+}
+#bar1 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+.bar2 {
+    width: 50% !important;
 }
 
 #bar th,#bar1 th {
     text-align: center;
-    font-size: 13pt;
+    font-size: 12pt;
     padding: 15px;
-    background-color: #f9fadc;
+    background-color: #fcfdd6;
     font-family: Arial, Helvetica, sans-serif;
     width: 5%;
     color: black;
     border: 1px solid #afafafaf;
+    cursor: pointer;
 }
 #bar th:hover,#bar1 th:hover {
-    background-color: #f8f8ee;
+    background-color: #f8f8da;
     border: 2px solid black;
-    font-size: 20pt;
+    font-size: 18pt;
 }
 #bar1 th {
-    background-color: #f6f8de;
+    background-color: #fbfcdd;
     border: 1px solid #afafafaf;
+    font-family: sans-serif;
 }
 a:link, a:visited {
     text-decoration: none;
@@ -76,6 +91,7 @@ a:link, a:visited {
 }
 #intro,#why,#ser,#categ,#buy,#prices{ 
 background-color: #f5f5e6;
+border: 1px solid #afafafaf;
 }
 .icon {
     width: 30px;
@@ -90,6 +106,21 @@ background-color: #f5f5e6;
 #introC,#whyC,#serC {
     color: #444343;
     text-align: left;
+}
+.CatP1 {
+    color: #313030;
+    text-align: center;
+    /* margin-left: 260px; */
+    background-color: #fafadc;
+    border: 1px solid black;
+    /* width: 30%; */
+    padding: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.CatP1:hover {
+    font-size: 25pt;
+    box-shadow: 10px 10px 10px black;
 }
 #introduction,li,#services,#whyus {
 font-family: Arial, Helvetica, sans-serif;
